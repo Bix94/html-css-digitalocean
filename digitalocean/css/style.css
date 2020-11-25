@@ -3,11 +3,13 @@
   height: 200px;
   border:1px solid black;
 }
-
 .m_t{
   margin-top: 500px;
 }
-
 .m_b{
   margin-bottom:800px;
+}
+
+.collapse{
+  visibility: collapse;
 }
