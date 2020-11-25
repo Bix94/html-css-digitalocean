@@ -1,0 +1,13 @@
+.debug [class*='col-']{
+  background-color: red;
+  height: 200px;
+  border:1px solid black;
+}
+
+.m_t{
+  margin-top: 300px;
+}
+
+.m_b{
+  margin-bottom:1000px;
+}
