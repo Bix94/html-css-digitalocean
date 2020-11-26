@@ -59,6 +59,7 @@ footer{
 }
 
 
+
 .rocket {
   width: 50%;
   margin-left: 25%;
@@ -91,6 +92,10 @@ footer{
   margin-top: 100px;
 }
 
+
+.mgb_10{
+  margin-bottom: 10px;
+}
 .mgb_20{
   margin-bottom: 20px;
 }
