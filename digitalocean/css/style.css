@@ -8,13 +8,15 @@
   margin-top: 500px;
 }
 .jumbotron{
-
   background-image: url(https://images.prismic.io/www-static/0026a57b93abe5b04413765253903472dab58e11_general-droplets_blog-v4_twitter---facebook.png?auto=compress,format);
 }
 
 /* COLORI FONT E SFONDI */
 .tcw{
   color: white;
+}
+.tcg{
+  color: #7f8693;
 }
 .tcb{
   color: #0064ff;
@@ -31,21 +33,27 @@ img{
   margin-right: 20px;
 }
 
-#business, #design{
+#business, #design ,{
   background-color: #f3f5f9;
 }
 
-
-li{
-  list-style: none;
+.lista1{
+  margin-left: 50px;
   border-left: 1px solid grey;
-  padding-left: 20px;
 }
 
 .carousel{
   width: 50%;
 }
 
-#started, #service{
+#service, #started{
   background-color:  #0064ff;
+}
+
+footer{
+  background-color: #010e28;
+}
+
+.list-unstyle .first ul li:first-child{
+  color: white;
 }
