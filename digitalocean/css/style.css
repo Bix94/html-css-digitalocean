@@ -4,13 +4,13 @@
   border:1px solid black;
 }
 
-.mt{
-  margin-top: 500px;
-}
 .jumbotron{
-  background-image: url(https://images.prismic.io/www-static/0026a57b93abe5b04413765253903472dab58e11_general-droplets_blog-v4_twitter---facebook.png?auto=compress,format);
+  background-image: url(../img/bg-home-1.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 90px; /*Altezza navbar-fixed*/
 }
-
 /* COLORI FONT E SFONDI */
 .tcw{
   color: white;
@@ -22,38 +22,87 @@
   color: #0064ff;
 }
 .bgcw{
-  background-color: white
+  background-color: white;
 }
 
 h4{
   text-transform: uppercase;
 }
-img{
+footer{
+  background-color: #010e28;
+}
+/* IMMAGINI */
+.bus_img{
   width: calc(100% / 7) ;
   margin-right: 20px;
 }
 
-#business, #design ,{
+/* ID SEZIONI */
+#business, #design, #development{
   background-color: #f3f5f9;
 }
-
+ #started{
+  background-color:  #0064ff;
+}
+#service{
+  background-color: black;
+}
 .lista1{
   margin-left: 50px;
   border-left: 1px solid grey;
+
+}
+.lista1 li{
+  margin-top: 20px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
-.carousel{
+
+.rocket {
   width: 50%;
+  margin-left: 25%;
+  padding: 50px 10px;
+}
+.rocket img{
+  width: 100%;
+}
+.size_extra{
+  width: 100%;
+}
+.text_underline{
+  text-decoration: underline;
 }
 
-#service, #started{
-  background-color:  #0064ff;
+/* MARGINI-PADDING */
+.mgt_20{
+  margin-top: 20px;
+}
+.mgt_40{
+  margin-top: 40px;
+}
+.mgt_60{
+  margin-top: 60px;
+}
+.mgt_80{
+  margin-top: 80px;
+}
+.mgt_100{
+  margin-top: 100px;
 }
 
-footer{
-  background-color: #010e28;
+.mgb_20{
+  margin-bottom: 20px;
 }
-
-.list-unstyle .first ul li:first-child{
-  color: white;
+.mgb_40{
+  margin-bottom: 40px;
+}
+.mgb_60{
+  margin-bottom: 60px;
+}
+.mgb_80{
+  margin-bottom:80px;
+}
+.mgb_100{
+  margin-bottom:100px;
 }
