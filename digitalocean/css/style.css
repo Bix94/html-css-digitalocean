@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 90px; /*Altezza navbar-fixed*/
+  margin-bottom: 0px;
 }
 .logo_google::before{
   content: '';
@@ -19,6 +20,7 @@
   background-size: cover;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png);
 }
+
 /* COLORI FONT SFONDI E SIMILI */
 .tcw{
   color: white;
@@ -48,17 +50,42 @@ footer{
 input{
   text-indent: 10px;
 }
+p{
+  opacity: 0.7;  
+}
 
+/* HEADER */
+header .nav{
+  line-height: 60px;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background-color: white;
+}
+.hamburger i{
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #0069FF;
+  font-size: 120%;
+}
 /* IMMAGINI */
 .bus_img{
   width: calc(100% / 7) ;
   margin-right: 20px;
 }
+.d_o{
+  height: 30px;
+}
 .rocket img{
-  width: 100%;
+  width: 80%;
 }
 .design img{
   width: 100%;
+}
+.chevron_sx{
+  color: #031b4e;
+  resize: both;
 }
 /* BUTTONS */
 .btn_md{
@@ -80,6 +107,11 @@ input{
 }
 
 /* LISTE */
+header li{
+  display: inline;
+  margin-right: 15px;
+  color: black;
+}
 .lista1{
   margin-left: 50px;
   border-left: 1px solid grey;
@@ -89,9 +121,15 @@ input{
   font-size: 20px;
   padding-left: 10px;
 }
+.social_list li{
+  display: inline;
+  font-size: 20px;
+  padding-right: 10px;
+}
 .text_underline{
   text-decoration: underline;
 }
+
 /* SUDUZFZU */
 .rocket {
   width: 50%;
@@ -143,4 +181,27 @@ input{
 }
 .mgb_100{
   margin-bottom:100px;
+}
+
+/* CERCHI */
+.cerchi div{
+  margin-left: 49%;
+}
+.cerchio_blu {
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 6px;
+    border: 2px solid rgb(0, 105, 255);
+}
+.cerchio_tras {
+   width: 10px;
+   height: 10px;
+   color: blue;
+   border-radius: 50%;
+   cursor: pointer;
+   margin: 0px 6px;
+   border: 2px solid rgb(0, 105, 255);
 }

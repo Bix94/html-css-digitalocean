@@ -7,37 +7,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <!-- ROW + COL XS6x2 + XS12x2 nidificati -->
-      <div class="container debug">
-        <div class="row">
-          <div class="col-xs-6 col-md-4">
-           <div class="row">
-             <div class="col-xs-12">
-               DIGITAL
+      <!-- NAVBAR FIXED -->
+      <nav class="nav navbar-fixed-top">
+        <!-- ROW + COL XS6x2 + XS12x2 nidificati -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-md-4">
+             <div class="row">
+               <!-- logo -->
+               <div class="col-xs-12">
+                 <img class="d_o" src="img/logo.png" alt="">
+               </div>
+               <!-- agg padding dv interni -->
              </div>
-             <!-- agg padding dv interni -->
-           </div>
-          </div>
-          <div class="col-xs-6 col-md-8">
-            <div class="row">
-              <div class="col-xs-12 hidden-lg">
-                NAVBAR
-              </div>
-              <div class="hidden-xs hidden-sm hidden-md visible-lg-6 col-lg-6">
-                      PRIMA LISTA
-              </div>
-              <div class="hidden-xs hidden-sm hidden-md visible-lg-6 col-lg-6">
-                      SECONDA LISTA
-              </div>
+            </div>
+            <div class="col-xs-6 col-md-8">
+              <!-- hambuger hidden lg  -->
+              <div class="row">
+                <div class="col-xs-12 hidden-lg text-right hamburger">
+                  <i aria-hidden class="fas fa-bars" title="Menu"></i>
+                  <span class="sr-only">Menu</span>
+                </div>
+                <!-- hidden xs to md visible lg -->
+                <div class="hidden-xs hidden-sm hidden-md visible-lg-6 col-lg-6 text-left">
+                  <!-- lista inline  -->
+                  <ul class="list-unstyled">
+                    <li class="drop"><a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li>
+                      <a href="#">Customers</a>
+                    </li>
+                    <li class="drop">
+                      <a href="#">Community <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+                <!-- hidden xs to md visible lg -->
+                <div class="hidden-xs hidden-sm hidden-md visible-lg-6 col-lg-6 text-right">
+                  <!-- lista inline -->
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Docs</a>
+                    </li>
+                    <li class="drop">
+                      <a href="#">Support <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li>
+                      <a href="#">Login</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-default btn_white_blue">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
+        </div>
+      </nav>
     </header>
     <!-- /HEADER -->
     <!-- JUMBO -->
@@ -145,14 +178,23 @@
       <!-- /SCALE -->
       <!-- DESIGN -->
       <section id="design">
-        <div class="container text-center mgt_40 lh">
+        <div class="container text-center mgt_40">
              <div class="row mgb_60">
               <div class="col-xs-12">
                 <h2 class="mgb_20 mgt_60">Designed for developers</h2>
                 <p class="mgb_80">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
                 <img class="design mgb_20" src="https://images.prismic.io/www-static/3292f7d6-1781-4362-8b38-f989dcefa973_screenshot-create-droplet-941311f7.jpg?auto=compress,format" alt="" class="carousel">
-                <p>create compute servers in 55 second or less</p>
-                <p>OOOO</p>
+                <p>Create compute servers in 55 second or less.</p>
+                <div class="cerchi text-center">
+                   <div class="cerchio_blu">
+                   </div>
+                   <div class="cerchio_tras">
+                   </div>
+                   <div class="cerchio_tras">
+                   </div>
+                   <div class="cerchio_tras">
+                   </div>
+                </div>
               </div>
              </div>
         </div>
@@ -336,19 +378,33 @@
       <!-- DEVELOPMENT -->
       <section id="development">
         <div class="container text-center">
-             <div class="row mgt_40">
-              <div class="col-xs-12">
-                <h2>Development teams love DigitalOcean</h2>
-                <div class="rocket bgcw mgt_80 mgb_20">
-                  <img src="img/rockerbox-logo.png" alt="">
-                  <p>"We've been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
-                  <p>Rick O'Toole</p>
-                  <p>CO-Founder and CTO</p>
-                  <a href="#">Read story ></a>
-                </div>
-              </div>
-              <p class="mgb_60">OOOO</p>
-             </div>
+              <div class="row mgt_40">
+                 <!-- <div class="col-xs-1">
+                  <i class="fas fa-chevron-left"></i>
+                 </div> -->
+                 <div class="col-xs-12">
+                  <h2>Development teams love DigitalOcean</h2>
+                  <div class="rocket bgcw mgt_80 mgb_20">
+                    <img src="img/rockerbox-logo.png" alt="">
+                    <p class="mgt_20">"We've been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+                    <p>Rick O'Toole</p>
+                    <p>CO-Founder and CTO</p>
+                    <a href="#">Read story ></a>
+                  </div>
+                 </div>
+                 <!-- <div class="col-xs-1">
+                  <i class="fas fa-chevron-right"></i>
+                 </div> -->
+                 </div>
+                 <!-- SCOPRIRE COME METTERLI INLINE SENZA FARLI SCHIACCIARE -->
+                 <div class="cerchi text-center mgb_60">
+                    <div class="cerchio_blu">
+                    </div>
+                    <div class="cerchio_tras">
+                    </div>
+                    <div class="cerchio_tras">
+                    </div>
+                 </div>
         </div>
       </section>
       <!-- /DEVELOPMENT -->
@@ -359,7 +415,7 @@
           <div class="row mgt_40 mgb_60">
             <div class="col-xs-12">
               <h2 class="tcw mgb_20">Get started now</h2>
-              <button type="button" class="btn btn-default">Create your account</button>
+              <button type="button" class="btn btn-default"><span class="tcb">Create your account</span></button>
             </div>
           </div>
         </div>
@@ -373,7 +429,7 @@
             <img class="mgb_10" src="https://prismic-io.s3.amazonaws.com/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg" alt="">
             <p>© 2018 DigitalOcean, LLC. All rights reserved.</p>
              Proudly made in NY
-            <ul class="list-unstyled mgt_20">
+            <ul class="list-unstyled social_list mgt_10">
                <li><i class="fab fa-twitter"></i></li>
                <li><i class="fab fa-facebook-square"></i></li>
                <li><i class="fab fa-instagram"></i></li>
