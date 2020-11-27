@@ -3,7 +3,6 @@
   height: 200px;
   border:1px solid black;
 }
-
 .jumbotron{
   background-image: url(../img/bg-home-1.jpg);
   background-position: bottom;
@@ -11,7 +10,16 @@
   background-size: cover;
   margin-top: 90px; /*Altezza navbar-fixed*/
 }
-/* COLORI FONT E SFONDI */
+.logo_google::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png);
+}
+/* COLORI FONT SFONDI E SIMILI */
 .tcw{
   color: white;
 }
@@ -24,58 +32,84 @@
 .bgcw{
   background-color: white;
 }
-
+.bcw{
+  border-bottom: 1px solid white;
+}
+.extra_small{
+  font-size: 15px;
+}
+/* RED CLASS */
 h4{
   text-transform: uppercase;
 }
 footer{
   background-color: #010e28;
 }
+input{
+  text-indent: 10px;
+}
+
 /* IMMAGINI */
 .bus_img{
   width: calc(100% / 7) ;
   margin-right: 20px;
 }
-
+.rocket img{
+  width: 100%;
+}
+.design img{
+  width: 100%;
+}
+/* BUTTONS */
+.btn_md{
+  padding: 10px 0;
+}
+.btn_radius{
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.radius{
+  border-radius: 5px;
+}
 /* ID SEZIONI */
 #business, #design, #development{
   background-color: #f3f5f9;
 }
- #started{
-  background-color:  #0064ff;
+ #started, #service{
+  background-color:  #031b4e;
 }
-#service{
-  background-color: black;
-}
+
+/* LISTE */
 .lista1{
   margin-left: 50px;
   border-left: 1px solid grey;
-
 }
 .lista1 li{
   margin-top: 20px;
   font-size: 20px;
   padding-left: 10px;
 }
-
-
-
+.text_underline{
+  text-decoration: underline;
+}
+/* SUDUZFZU */
 .rocket {
   width: 50%;
   margin-left: 25%;
   padding: 50px 10px;
 }
-.rocket img{
-  width: 100%;
-}
 .size_extra{
   width: 100%;
 }
-.text_underline{
-  text-decoration: underline;
-}
 
 /* MARGINI-PADDING */
+/* TOP */
+.mgt_0{
+  margin-top: 0px;
+}
+.mgt_10{
+  margin-top: 10px;
+}
 .mgt_20{
   margin-top: 20px;
 }
@@ -91,8 +125,7 @@ footer{
 .mgt_100{
   margin-top: 100px;
 }
-
-
+/* BOTTOM */
 .mgb_10{
   margin-bottom: 10px;
 }
