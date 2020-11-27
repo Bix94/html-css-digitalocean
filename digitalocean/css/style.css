@@ -20,7 +20,18 @@
   background-size: cover;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png);
 }
-
+.jumbotron_login input:not([type="submit"]){
+  width: 100%;
+  border-radius: 5px;
+  line-height: 2em;
+  padding: 5px;
+  border: 1px solid #EEE;
+}
+.jumbotron_login input:not([type="submit"]):hover,
+.jumbotron_login input:not([type="submit"]):active,
+.jumbotron_login input:not([type="submit"]):focus{
+  border: 1px solid #005FE6;
+}
 /* COLORI FONT SFONDI E SIMILI */
 .tcw{
   color: white;
@@ -34,6 +45,10 @@
 .bgcw{
   background-color: white;
 }
+/* .btn_blue{
+  background-color: #006aff;
+  border:1px solid #0069FF;
+} */
 .bcw{
   border-bottom: 1px solid white;
 }
@@ -51,7 +66,7 @@ input{
   text-indent: 10px;
 }
 p{
-  opacity: 0.7;  
+  opacity: 0.7;
 }
 
 /* HEADER */
@@ -69,10 +84,13 @@ header .nav{
   color: #0069FF;
   font-size: 120%;
 }
-/* IMMAGINI */
+/* IMMAGINI WARNING chiedere soluzione collasso con calc */
 .bus_img{
   width: calc(100% / 7) ;
-  margin-right: 20px;
+  /* padding-right: 20px; */
+}
+.logo li{
+  display: inline;
 }
 .d_o{
   height: 30px;
@@ -80,12 +98,8 @@ header .nav{
 .rocket img{
   width: 80%;
 }
-.design img{
-  width: 100%;
-}
-.chevron_sx{
-  color: #031b4e;
-  resize: both;
+.droplet{
+  width: 33%;
 }
 /* BUTTONS */
 .btn_md{
@@ -109,11 +123,11 @@ header .nav{
 /* LISTE */
 header li{
   display: inline;
-  margin-right: 15px;
+  padding-right: 15px;
   color: black;
 }
 .lista1{
-  margin-left: 50px;
+  padding-left: 50px;
   border-left: 1px solid grey;
 }
 .lista1 li{
@@ -129,17 +143,14 @@ header li{
 .text_underline{
   text-decoration: underline;
 }
-
-/* SUDUZFZU */
 .rocket {
   width: 50%;
-  margin-left: 25%;
+  padding-left: 25%;
   padding: 50px 10px;
 }
 .size_extra{
   width: 100%;
 }
-
 /* MARGINI-PADDING */
 /* TOP */
 .mgt_0{
@@ -182,26 +193,34 @@ header li{
 .mgb_100{
   margin-bottom:100px;
 }
-
-/* CERCHI */
-.cerchi div{
-  margin-left: 49%;
+/* HELP */
+.help{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 5px;
+  height: 80px;
+  width: 80px;
 }
-.cerchio_blu {
-    width: 10px;
-    height: 10px;
-    background: blue;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0px 6px;
-    border: 2px solid rgb(0, 105, 255);
+.shark{
+  background-image: url("../img/shark-fixed.svg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.cerchio_tras {
-   width: 10px;
-   height: 10px;
-   color: blue;
-   border-radius: 50%;
-   cursor: pointer;
-   margin: 0px 6px;
-   border: 2px solid rgb(0, 105, 255);
+.shark:hover .chat{
+  display: block;
+}
+.chat{
+  position: absolute;
+  width: 350px;
+  height: 60px;
+  left: -375px;
+  top: 15px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  padding: 10%;
 }
