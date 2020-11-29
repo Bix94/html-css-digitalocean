@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- WARNING MI PRENDE ICO SOCIAL LIST NON QUELLE DI CHEVRON LEFT/RIGHT -->
   </head>
   <body>
     <!-- HEADER -->
@@ -73,6 +74,7 @@
       </nav>
     </header>
     <!-- /HEADER -->
+    <!-- CHIEDERE WARNING JUMBOTRON BOOTSTRAP HA UN MARGIN BOTTOM PREIMPOSTATO ANCHE SOVRASCRIVENDOLO NN LO TOGLIE-->
     <!-- JUMBO -->
     <div class="jumbotron">
       <div class="container">
@@ -101,7 +103,6 @@
     </div>
     <!-- MAIN -->
     <main>
-       <!-- controllare media WARNING colonna img -->
       <section id="business" class="mgt_0">
         <div class="container text-center">
             <!-- xs12x1 + xs6x6 + xs12x1 -->
@@ -161,7 +162,7 @@
                      <h3>Optimized compute types</h3>
                      <p>With Basic, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
                    </div>
-                   <div class="col-xs-12 col-md-4 ">
+                   <div class="col-xs-12 col-md-4">
                      <img src="https://d9hhrg4mnvzow.cloudfront.net/try.digitalocean.com/developerbrand/921da294-stacksplusicon.svg" alt="">
                      <h3>One click apps</h3>
                      <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
@@ -186,7 +187,7 @@
               <div class="col-xs-12">
                 <h2 class="mgb_20 mgt_60">Designed for developers</h2>
                 <p class="mgb_80">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
-                <div class="">
+                <div class="box_droplet">
                   <img class="mgb_20 droplet" src="https://images.prismic.io/www-static/3292f7d6-1781-4362-8b38-f989dcefa973_screenshot-create-droplet-941311f7.jpg?auto=compress,format" alt="">
                 </div>
                 <p>Create compute servers in 55 second or less.</p>
@@ -202,6 +203,7 @@
       </section>
       <!-- /DESIGN -->
       <!-- /FEATURES -->
+       <!-- WARNING SEZIONE CHE SBALLA MEDIA QUERY MA NON CI SONO MARGINI E GRANDEZZA IMG 40PX ... CHIEDERE -->
       <section id="features">
         <div class="container">
           <div class="row mgt_40">
